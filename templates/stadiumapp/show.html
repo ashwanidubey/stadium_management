@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/show.css'%}">
+
+    <title></title>
+  </head>
+  <body>
+<div class="A",id="a">
+
+<div class="B">
+  <a class="c" href="/stadiumapp/home">home</a>
+  <a class="c" href="/stadiumapp/searchform">search</a>
+</div>
+
+    {% if ticket %}
+    <table id='table'>
+      <thead>
+        <th>name</th>
+        <th>age</th>
+        <th>gender</th>
+        <th>seat_type</th>
+        <th>aadhar</th>
+        <th>seat_no</th>
+      </thead>
+
+    {% for x in ticket %}
+    <tr>
+      <td>{{x.name}}</td>
+      <td>{{x.age}}</td>
+      <td>{{x.gender}}</td>
+      <td>{{x.seat_type}}</td>
+      <td>{{x.aadhar_no}}</td>
+      <td>{{x.seat_no}}</td>
+      <td class="a"><a href="/stadiumapp/update?ticketid={{x.id}}">updation</a></td>
+      <td class="a"><a href="/stadiumapp/cancel?ticketid={{x.id}}">cancel ticket</a></td>
+    </tr>
+
+    {% endfor %}
+  </table>
+    {% endif %}
+    </div>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+      <link rel="stylesheet" type="text/css" href="{% static 'css/f3.css'%}">
+  </head>
+  <body>
+
+    <a href="/stadiumapp/home/">back</a>
+    <table id="b">
+
+    <thead>
+      <th><h1> name</h1></th>
+      <th><h1>age</h1></th>
+      <th><h1>gender</h1></th>
+      <th><h1>seat type</h1></th>
+      <th><h1>seat no.</h1></th>
+      <th><h1>aadhar no. </h1></th>
+    </thead>
+    <tr>
+    <td> <h1>{{ticket.name}}  </h1></td>
+    <td> <h1> {{ticket.age}}  </h1></td>
+    <td><h1>{{ticket.gender}}</h1></td>
+    <td>  <h1> {{ticket.seat_type}}</h1></td>
+    <td><h1>{{ticket.seat_no}}</h1></td>
+    <td> <h1> {{ticket.aadhar_no}}</h1></td>
+    </tr>
+      </table>
+  </body>
+</html>

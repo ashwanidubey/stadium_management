@@ -1,0 +1,25 @@
+body
+{
+  color:white;
+  background:  url('j4.jpg') 100% fixed;
+  background-size: cover;
+text-align: center;
+  font-family: "calibri";
+}
+A
+{
+  font-family: "calibri";
+  color: yellow;
+}
+table
+{
+  padding: 20px;
+}
+#home
+{
+  background-color: #F4FA3C
+   text-align:justify;
+   padding: inherit;
+   border: solid 2px #329A97;
+   text-decoration:none;
+}

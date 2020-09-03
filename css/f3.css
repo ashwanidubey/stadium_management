@@ -1,0 +1,26 @@
+body
+{
+
+text-align:center;
+  background-color:lightblue;
+}
+A
+{text-align: center;
+  color: white;
+padding: 20px;
+}
+  B
+  {text-align: center;
+    color: red;
+  }
+  #back a
+  { background-color: #F4FA3C
+    text-align:justify;
+    padding: inherit;
+    border: solid 2px #329A97;
+    text-decoration: none;
+  }
+# centre
+{
+  text-align: center;
+}

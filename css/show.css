@@ -1,0 +1,24 @@
+body
+{
+  color :red;
+  text-align: center;
+  padding: 50px;
+  text-decoration: none;
+}
+#table
+{  text-decoration: none;
+  margin:auto;
+  width: 1000px;
+}
+.a,.c
+{
+  background-color: #F4FA3C
+   text-align:justify;
+   padding: inherit;
+   border: solid 2px #329A97;
+   text-decoration:none;
+}
+.B
+{
+  margin: auto;
+}

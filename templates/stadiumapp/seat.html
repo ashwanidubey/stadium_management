@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <link rel="stylesheet" type="text/css" href="{% static 'css/f3.css'%}">
+    <title></title>
+  </head>
+  <body>
+<div class="A">
+  <h1>SILVER SEAT</h1>
+
+</div>
+    <table>
+    <tr>
+      {% for x in a1 %}
+      <td><a href="/stadiumapp/seatreturn?data=silver,{{x.d}}">{{x.s}} </a></td>
+      {% endfor %}
+    </tr>
+    <tr>
+      {% for x in a2 %}
+      <td><a href="/stadiumapp/seatreturn?data=silver,{{x.d}}">{{x.s}} </a></td>
+      {% endfor %}
+    </tr>
+    <tr>
+      {% for x in a3 %}
+      <td><a href="/stadiumapp/seatreturn?data=silver,{{x.d}}">{{x.s}} </a></td>
+      {% endfor %}
+    </tr>
+    </table>
+    <div class="A">
+      <h1>GOLD SEAT</h1>
+
+    </div>
+    <table>
+    <tr>
+      {% for x in a4 %}
+      <td><a href="/stadiumapp/seatreturn?data=gold,{{x.d}}">{{x.s}} </a></td>
+      {% endfor %}
+    </tr>
+    <tr>
+      {% for x in a5 %}
+      <td><a href="/stadiumapp/seatreturn?data=gold,{{x.d}}">{{x.s}} </a></td>
+      {% endfor %}
+    </tr>
+    <tr>
+      {% for x in a6 %}
+      <td><a href="/stadiumapp/seatreturn?data=gold,{{x.d}}">{{x.s}} </a></td>
+      {% endfor %}
+    </tr>
+    </table>
+
+    <div class="A">
+      <h1>DIAMOND SEAT</h1>
+    </div>
+    <table>
+    <tr>
+      {% for x in a7 %}
+      <td><a href="/stadiumapp/seatreturn?data=diamond,{{x.d}}">{{x.s}} </a></td>
+      {% endfor %}
+    </tr>
+    <tr>
+      {% for x in a8 %}
+      <td><a href="/stadiumapp/seatreturn?data=diamond,{{x.d}}">{{x.s}} </a></td>
+      {% endfor %}
+    </tr>
+    <tr>
+      {% for x in a9 %}
+      <td><a href="/stadiumapp/seatreturn?data=diamond,{{x.d}}">{{x.s}}</a></td>
+      {% endfor %}
+    </tr>
+
+    </table>
+    <div class="B">
+      <h1>{{error}}</h1>
+    </div>
+
+  </body>
+</html>

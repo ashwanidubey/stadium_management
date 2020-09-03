@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>serach ticket</title>
+    <link rel="stylesheet" href="{% static 'css/f1.css '%}">
+  </head>
+  <body>
+    <a href="/stadiumapp/home">home</a>
+    <form  action="/stadiumapp/search" method="post">
+      {% csrf_token %}
+      {{ form }}
+      <input type="submit"  value="search">
+    </form>
+    {% if ticket %}
+    <table>
+      <thead>
+        <th>name</th>
+        <th>age</th>
+        <th>gender</th>
+        <th>seat_type</th>
+        <th>aadhar</th>
+        <th>seat_no</th>
+      </thead>
+
+    {% for x in ticket %}
+    <tr>
+      <td>{{x.name}}</td>
+      <td>{{x.age}}</td>
+      <td>{{x.gender}}</td>
+      <td>{{x.seat_type}}</td>
+      <td>{{x.aadhar_no}}</td>
+      <td>{{x.seat_no}}</td>
+      <td><a href="/stadiumapp/update?ticketid={{x.id}}">updation</a></td>
+      <td><a href="/stadiumapp/cancel?ticketid={{x.id}}">cancel ticket</a></td>
+    </tr>
+
+    {% endfor %}
+  </table>
+    {% endif %}
+  </body>
+</html>

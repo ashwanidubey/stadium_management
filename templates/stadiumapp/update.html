@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>hii</h1>
+    <form class="" action="/stadiumapp/edit" method="post">
+      {% csrf_token%}
+      {{form.as_p}}
+      <input type="hidden" name="ticketid" value="{{ ticket.id }}">
+      <div class="">
+      <input type="submit" name="" value="save">
+      </div>
+
+
+</form>
+  </body>
+</html>

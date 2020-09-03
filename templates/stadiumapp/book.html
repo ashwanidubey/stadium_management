@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/f3.css'%}">
+    <title>chattrapati stadium</title>
+  </head>
+  <body>
+    <a href="/stadiumapp/home/">back</a>
+    <h1>book</h1>
+  <form class="" action="/stadiumapp/add" method="post">
+    {% csrf_token%}
+    {{form.as_p}}
+    <div class="">
+    <input type="submit" name="" value="book">
+    </div>
+
+  </form>
+
+  <h3>{{ e1}}</h3>
+  <h3>{{e2s}}</h3>
+  </body>
+</html>
